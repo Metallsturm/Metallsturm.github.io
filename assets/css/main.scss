@@ -1,0 +1,20 @@
+---
+---
+
+@import "minimal-mistakes";
+
+/* 1. 引入 Google 字体 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Noto+Sans+SC:wght@400;700&display=swap');
+
+/* 2. 定义字体变量，覆盖主题默认值 */
+$sans-serif: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$serif: 'Noto Serif SC', Georgia, 'Times New Roman', serif;
+
+/* 3. 应用字体到全局 */
+body {
+  font-family: $sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $serif;
+}
