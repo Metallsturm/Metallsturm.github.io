@@ -4,11 +4,16 @@
 @import "minimal-mistakes";
 
 /* 1. 引入 Google 字体 */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Noto+Sans+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alte+DIN&display=swap');
 
 /* 2. 定义字体变量，覆盖主题默认值 */
-$sans-serif: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-$serif: 'Noto Serif SC', Georgia, 'Times New Roman', serif;
+@import url('https://fonts.googleapis.com/css2?family=Alte+DIN&display=swap');
+
+// 2. 定义字体变量并覆盖主题默认值
+$sans-serif: 'Alte DIN', sans-serif; /* 英文用 Alte DIN，无衬线体作为备用 */
+$global-font-family: $sans-serif;    /* 将全局默认字体设为 Alte DIN */
+
+// 3. 将变量应用到整个页面 (为了保证兼容性，最好再明确声明一次)
 
 /* 3. 应用字体到全局 */
 body {
